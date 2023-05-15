@@ -80,14 +80,13 @@ img {
   |============================
 */
 .header {
-  position: fixed;
   width: 100%;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: #ffffff;
 
-  z-index: 100;
+  
 }
 .header-container {
   display: flex;
@@ -142,7 +141,6 @@ img {
 .menu-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 0;
 
   display: block;
@@ -241,8 +239,6 @@ img {
   display: block;
   height: 56px;
   padding: 16px 32px;
-  margin-bottom: 188px;
-  align-items: center;
   min-width: 169px;
   margin: 0 auto;
 
@@ -771,8 +767,10 @@ img {
   color: var(--light-txt-cl);
 }
 .subscribe-btn {
-  /* padding-left: 24px; */
-
+ text-align: left;
+ padding-left: 24px;
+ padding-bottom: 8px;
+ padding-top: 8px;
   width: 165px;
   height: 40px;
 
@@ -781,9 +779,19 @@ img {
   border-radius: 4px;
 
   color: var(--btn-color);
+
+  transition: background-color var(--transition);
 }
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--accent-bg-color);
+  }
+
+
 .footer-btn-wrapper {
   position: relative;
+
 }
 .footer-icon {
   position: absolute;
@@ -824,7 +832,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
 
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -886,6 +894,7 @@ img {
   flex-direction: column;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 }
 
 .form-title {
