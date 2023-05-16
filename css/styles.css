@@ -946,6 +946,7 @@ img {
 }
 .modal-form-field-wrapper {
   position: relative;
+  display: block;
 }
 .modal-form-icon {
   position: absolute;
@@ -1002,7 +1003,6 @@ img {
 .modal-checkbox-desc {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-family: var(--primary-font);
   font-size: 12px;
   line-height: 1.6;
