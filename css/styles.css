@@ -687,6 +687,7 @@ img {
   align-items: baseline;
 }
 .social-media {
+  margin-right: 80px;
 }
 .social-media-title {
   font-family: var(--primary-font);
@@ -732,8 +733,12 @@ img {
 /* Footer form */
 .footer-form {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-form-title {
+ display: block;
   font-family: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
@@ -742,6 +747,7 @@ img {
   color: var(--light-txt-cl);
 
   margin-bottom: 16px;
+ margin-right: auto;
 }
 
 .footer-form-input {
@@ -777,7 +783,7 @@ img {
   border: none;
   background: #4d5ae5;
   border-radius: 4px;
-
+  cursor: pointer;
   color: var(--btn-color);
 
   transition: background-color var(--transition);
@@ -828,6 +834,9 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+    padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
 
   transform: translate(-50%, -50%) scale(1);
 
@@ -892,9 +901,9 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
+  /* padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 24px; */
 }
 
 .form-title {
@@ -913,6 +922,7 @@ img {
   margin-bottom: 8px;
 }
 .modal-form-desc {
+  display: block;
   font-family: var(--primary-font);
   font-size: 12px;
   line-height: 1.6;
@@ -1019,6 +1029,7 @@ img {
   border-radius: 4px;
   color: var(--btn-color);
   border: none;
+  cursor: pointer;
 
   transition: background-color var(--transition);
 }
