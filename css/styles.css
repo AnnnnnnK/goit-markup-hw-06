@@ -687,7 +687,6 @@ img {
   align-items: baseline;
 }
 .social-media {
-  margin-right: 80px;
 }
 .social-media-title {
   font-family: var(--primary-font);
@@ -734,7 +733,7 @@ img {
 .footer-form {
   margin-left: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 .footer-form-title {
@@ -777,7 +776,7 @@ img {
  padding-left: 24px;
  padding-bottom: 8px;
  padding-top: 8px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
 
   border: none;
@@ -797,7 +796,6 @@ img {
 
 .footer-btn-wrapper {
   position: relative;
-
 }
 .footer-icon {
   position: absolute;
