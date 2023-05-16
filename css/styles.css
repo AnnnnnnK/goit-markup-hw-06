@@ -736,6 +736,10 @@ img {
   align-items: flex-end;
   justify-content: center;
 }
+
+.subcribe-label{
+  margin-right: 24px;
+}
 .footer-form-title {
  display: block;
   font-family: var(--primary-color);
@@ -750,13 +754,10 @@ img {
 }
 
 .footer-form-input {
-  /* display: flex;
- align-items: center;
- justify-content: center; */
   width: 264px;
   height: 40px;
 
-  margin-right: 24px;
+ 
   border-radius: 4px;
   background-color: transparent;
   outline: none;
@@ -772,10 +773,14 @@ img {
   color: var(--light-txt-cl);
 }
 .subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
  text-align: left;
- padding-left: 24px;
- padding-bottom: 8px;
- padding-top: 8px;
+ padding: 8px 24px;
+ 
   min-width: 165px;
   height: 40px;
 
@@ -795,14 +800,14 @@ img {
 
 
 .footer-btn-wrapper {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
 }
 .footer-icon {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
-  fill: #ffffff;
+  fill: #ffffff; 
 }
 
 /**
@@ -832,9 +837,10 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-    padding-left: 24px;
+  padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
+  padding-top: 72px;
 
   transform: translate(-50%, -50%) scale(1);
 
@@ -913,11 +919,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-color);
 
-  padding-top: 72px;
+
   margin-bottom: 16px;
 }
 .modal-form-field {
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 .modal-form-desc {
   display: block;
